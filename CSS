@@ -1,0 +1,13 @@
+.box{
+    width: 1000px;
+    height: auto;
+    padding: 10px;
+    margin: 20px;
+    border-color: blue;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: burlywood;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin-bottom: 25px;
+}

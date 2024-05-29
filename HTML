@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surplus to Serve</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./myscript/surplus.js"></script>
+    <link rel="stylesheet" href="./mystyles/beauty.css">
+</head>
+<body>
+    <div class="box">
+    <div class="container">
+        <h1 class="mt-5">Surplus to Serve</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Restaurants</h2>
+                <form id="restaurantForm">
+                    <div class="form-group">
+                        <label for="restaurantName">Restaurant Name:</label>
+                        <input type="text" class="form-control" id="restaurantName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="surplusFood">Surplus Food Details:</label>
+                        <textarea class="form-control" id="surplusFood" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Notify NGOs</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>NGOs</h2>
+                <form id="ngoForm">
+                    <div class="form-group">
+                        <label for="ngoName">NGO Name:</label>
+                        <input type="text" class="form-control" id="ngoName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="requestFood">Request Food:</label>
+                        <textarea class="form-control" id="requestFood" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Request Food</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h2>Available Surplus Food</h2></div>
+                <ul id="surplusList" class="list-group">
+                    <!-- Surplus food items will be appended here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
